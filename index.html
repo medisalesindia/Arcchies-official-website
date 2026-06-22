@@ -6,7 +6,35 @@
 <title>Arcchies Flea Exhibition</title>
 
 <style>
+.hero-video{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
 
+.hero-video video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+color:white;
+text-align:center;
+padding-top:30vh;
+}
+
+.hero-video::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+z-index:1;
+}
 *{
 margin:0;
 padding:0;
