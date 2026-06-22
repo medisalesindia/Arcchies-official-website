@@ -128,9 +128,35 @@ z-index:9999;">
 💬 WhatsApp
   
 </a>
+<script>
 
+var countDownDate = new Date("July 18, 2026 10:00:00").getTime();
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("timer").innerHTML =
+days + " Days " + hours + " Hours " +
+minutes + " Minutes " + seconds + " Seconds ";
+
+}, 1000);
+
+</script>
 <body>
-
+.countdown{
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:#ff2d86;
+}
 <nav>
 
 <a href="#">Home</a>
@@ -157,7 +183,19 @@ z-index:9999;">
 <a href="https://wa.me/919893755190" class="btn">
 Book Your Stall
 </a>
+<section>
 
+<h2>Countdown to Arcchies Flea Exhibition</h2>
+
+<div class="card">
+
+<div class="countdown" id="timer">
+Loading...
+</div>
+
+</div>
+
+</section>
 </div>
 
 </div>
