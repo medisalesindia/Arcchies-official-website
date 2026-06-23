@@ -1,9 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Arcchies Flea Exhibition</title>
 
 <style>
@@ -13,140 +14,117 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#fff5fa;
-color:#333;
+background:#0F0F0F;
+color:white;
 }
 
 nav{
-background:#ff4fa0;
-padding:15px;
+position:fixed;
+top:0;
+width:100%;
+padding:20px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(15px);
 text-align:center;
+z-index:1000;
 }
 
 nav a{
-color:white;
+color:#D4AF37;
 text-decoration:none;
 margin:15px;
 font-weight:bold;
 }
 
-.hero-video{
-position:relative;
+.hero{
 height:100vh;
-overflow:hidden;
-}
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url('IMG-20260623-WA0007.jpg');
 
-.hero-video video{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-}
+background-size:cover;
+background-position:center;
 
-.hero-video::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-z-index:1;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .hero-content{
-position:relative;
-z-index:2;
-text-align:center;
-color:white;
-padding-top:25vh;
+max-width:800px;
 }
 
 .logo{
-width:140px;
-margin-bottom:20px;
-border-radius:20px;
+width:180px;
+border-radius:50%;
+border:3px solid #D4AF37;
+box-shadow:0 0 35px rgba(212,175,55,0.8);
+margin-bottom:25px;
 }
 
-.hero-content h1{
-font-size:50px;
+.hero h1{
+font-size:55px;
 }
 
-.hero-content p{
-font-size:20px;
-margin-top:15px;
+.hero p{
+margin-top:20px;
+font-size:22px;
+color:#ddd;
 }
 
 .btn{
 display:inline-block;
-background:white;
-color:#ff4fa0;
-padding:15px 30px;
-border-radius:30px;
+margin-top:30px;
+padding:15px 35px;
+background:#D4AF37;
+color:black;
 text-decoration:none;
 font-weight:bold;
-margin-top:20px;
+border-radius:50px;
 }
 
 section{
-padding:70px 10%;
+padding:90px 10%;
 }
 
 h2{
 text-align:center;
-color:#ff2d86;
-margin-bottom:30px;
+color:#D4AF37;
+margin-bottom:40px;
+font-size:40px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:25px;
 margin-bottom:25px;
-}
-
-.countdown{
-text-align:center;
-font-size:28px;
-font-weight:bold;
-color:#ff2d86;
+border:1px solid rgba(255,255,255,0.1);
 }
 
 </style>
+
 </head>
 
 <body>
-
-<a href="https://wa.me/919893755190"
-style="
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-z-index:9999;">
-💬 WhatsApp
-</a>
 
 <nav>
 
 <a href="#">Home</a>
 <a href="#">About</a>
+<a href="#">Booking</a>
 <a href="#">Contact</a>
 
 </nav>
 
-<div class="hero-video">
-
-<video autoplay muted loop playsinline>
-<source src="VID-20260622-WA0006.mp4" type="video/mp4">
-</video>
+<div class="hero">
 
 <div class="hero-content">
 
@@ -154,7 +132,9 @@ z-index:9999;">
 
 <h1>ARCCHIES FLEA EXHIBITION</h1>
 
-<p>18th & 19th July | Hotel Infiniti, Indore</p>
+<p>
+18th & 19th July • Hotel Infiniti, Indore
+</p>
 
 <a href="https://wa.me/919893755190" class="btn">
 Book Your Stall
@@ -170,7 +150,7 @@ Book Your Stall
 
 <div class="card">
 
-Arcchies Flea Exhibition brings together brands, entrepreneurs and businesses under one roof to create networking and growth opportunities.
+Arcchies Flea Exhibition is a premium platform connecting brands, entrepreneurs and businesses under one roof.
 
 </div>
 
@@ -200,7 +180,7 @@ Arcchies Flea Exhibition brings together brands, entrepreneurs and businesses un
 <h3>Mrs. Payal Khubani</h3>
 <p>Co-Founder, Arcchies Flea Exhibition</p>
 
-<br>
+<br><br>
 
 <h3>Mrs. Keerti Shadija</h3>
 <p>Co-Founder, Arcchies Flea Exhibition</p>
@@ -212,12 +192,38 @@ Arcchies Flea Exhibition brings together brands, entrepreneurs and businesses un
 
 <section>
 
-<h2>Countdown to Arcchies Flea Exhibition</h2>
+<h2>Arcchies In Numbers</h2>
+
+<div class="card">
+✨ 68 Total Stalls
+</div>
+
+<div class="card">
+✨ 63 Standard Stalls
+</div>
+
+<div class="card">
+✨ 5 Premium Corner Stalls
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Countdown To Event</h2>
 
 <div class="card">
 
-<div class="countdown" id="timer">
+<div id="timer"
+style="
+font-size:30px;
+text-align:center;
+color:#D4AF37;
+font-weight:bold;">
+
 Loading...
+
 </div>
 
 </div>
@@ -256,9 +262,20 @@ Download Brochure
 
 <div class="card">
 
-<img src="IMG-20260622-WA0008.jpg"
+<img
+src="IMG-20260622-WA0008.jpg"
 width="100%"
-style="border-radius:15px;">
+style="border-radius:20px;">
+
+<br><br>
+
+<a href="IMG-20260622-WA0008.jpg"
+target="_blank"
+class="btn">
+
+Explore Stall Layout
+
+</a>
 
 </div>
 
@@ -275,7 +292,7 @@ style="border-radius:15px;">
 
 <br><br>
 
-"Excellent exhibition with great crowd and management."
+"Excellent exhibition with premium crowd and great management."
 
 </div>
 
@@ -285,7 +302,7 @@ style="border-radius:15px;">
 
 <br><br>
 
-"Wonderful platform for business networking."
+"Wonderful platform for networking and business growth."
 
 </div>
 
@@ -329,40 +346,98 @@ Hotel Infiniti, Near Bombay Hospital, Indore.
 </section>
 <section>
 
-<h2>Contact Us</h2>
+<h2>Stall Booking</h2>
 
 <div class="card">
 
-📞 +91 98937 55190
+<form>
 
+<label>Full Name</label>
 <br><br>
 
-📍 Hotel Infiniti, Near Bombay Hospital, Indore
+<input type="text"
+placeholder="Enter Your Name"
+style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
 
+<label>Mobile Number</label>
 <br><br>
+
+<input type="text"
+placeholder="Enter Mobile Number"
+style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
+
+<label>Business Name</label>
+<br><br>
+
+<input type="text"
+placeholder="Enter Brand Name"
+style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
+
+<label>Category</label>
+<br><br>
+
+<select style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
+
+<option>Fashion</option>
+<option>Jewellery</option>
+<option>Lifestyle</option>
+<option>Kids Wear</option>
+<option>Home Decor</option>
+<option>Beauty & Cosmetics</option>
+<option>Food & Beverages</option>
+<option>Handmade Products</option>
+<option>Other</option>
+
+</select>
+
+<label>Stall Type</label>
+<br><br>
+
+<select style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
+
+<option>Standard Stall</option>
+<option>Premium Corner Stall</option>
+
+</select>
+
+<label>Preferred Stall</label>
+<br><br>
+
+<select style="width:100%;padding:15px;border-radius:15px;margin-bottom:20px;">
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+
+<option disabled>15 (Booked)</option>
+<option disabled>16 (Booked)</option>
+
+<option disabled>46 (Booked)</option>
+<option disabled>47 (Booked)</option>
+
+<option>A</option>
+<option>B</option>
+<option>C</option>
+
+<option disabled>D (Booked)</option>
+
+<option>E</option>
+
+<option disabled>T1 (Booked)</option>
+
+</select>
 
 <a href="https://wa.me/919893755190" class="btn">
-WhatsApp Booking
+
+Send Booking Request
+
 </a>
 
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Find Us</h2>
-
-<div class="card">
-
-<iframe
-src="https://www.google.com/maps?q=Hotel+Infiniti+Indore&output=embed"
-width="100%"
-height="300"
-style="border:0;border-radius:15px;"
-allowfullscreen>
-</iframe>
+</form>
 
 </div>
 
@@ -387,25 +462,132 @@ Instagram @arcchiesfleaexhibitions
 </section>
 
 
-<footer style="
-background:#ff4fa0;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-">
+<section>
 
-<h3>Arcchies Flea Exhibition</h3>
+<h2>Find Us</h2>
+
+<div class="card">
+
+<iframe
+src="https://www.google.com/maps?q=Hotel+Infiniti+Indore&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:20px;"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Contact Us</h2>
+
+<div class="card">
+
+📞 +91 98937 55190
+
+<br><br>
+
+📍 Hotel Infiniti, Near Bombay Hospital, Indore
+
+</div>
+
+</section>
+
+
+<a href="https://wa.me/919893755190"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+z-index:9999;">
+
+💬 WhatsApp
+
+      </a>
+      <section>
+
+<h2>Our Sponsors</h2>
+
+<div class="card">
+✨ Sponsor logos will be updated soon.
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Gallery</h2>
+
+<div class="card">
+
+📸 Exhibition memories coming soon...
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Why Choose Arcchies?</h2>
+
+<div class="card">
+⭐ Premium Exhibition Experience
+</div>
+
+<div class="card">
+⭐ High Footfall Visitors
+</div>
+
+<div class="card">
+⭐ Trusted by Brands & Entrepreneurs
+</div>
+
+<div class="card">
+⭐ Excellent Networking Opportunities
+</div>
+
+</section>
+
+
+<footer style="
+background:#000;
+padding:50px;
+text-align:center;
+border-top:1px solid #D4AF37;">
+
+<h3 style="color:#D4AF37;">
+ARCCHIES FLEA EXHIBITION
+</h3>
+
+<br>
 
 <p>
 18th & 19th July<br>
-Hotel Infiniti, Near Bombay Hospital, Indore
+Hotel Infiniti, Indore
 </p>
 
 <br>
 
 <p>
 📞 +91 98937 55190
+</p>
+
+<br>
+
+<p>
+Instagram: @arcchiesfleaexhibitions
 </p>
 
 <br>
@@ -419,18 +601,19 @@ Hotel Infiniti, Near Bombay Hospital, Indore
 
 <script>
 
+// Countdown Timer
+
 var countDownDate = new Date("July 18, 2026 10:00:00").getTime();
 
-var x = setInterval(function() {
+setInterval(function(){
 
 var now = new Date().getTime();
-
 var distance = countDownDate - now;
 
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+var days = Math.floor(distance/(1000*60*60*24));
+var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+var seconds = Math.floor((distance%(1000*60))/1000);
 
 document.getElementById("timer").innerHTML =
 days + " Days " +
@@ -438,9 +621,9 @@ hours + " Hours " +
 minutes + " Minutes " +
 seconds + " Seconds";
 
-}, 1000);
+},1000);
 
 </script>
 
 </body>
-  </html>
+</html>
